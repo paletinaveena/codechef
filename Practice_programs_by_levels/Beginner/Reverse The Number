@@ -1,0 +1,18 @@
+# Given an Integer N, write a program to reverse it.
+
+# Input 
+# The first line contains an integer T, total number of testcases. Then follow T lines, each line contains an integer N.
+
+# Output 
+# For each test case, display the reverse of the given number N, in a new line.
+
+t = int(input())
+for i in range(t):
+  l = []
+  r = []
+  n = input()
+  for c in n:
+    l.append(c)
+    r = l[::-1]
+  rev = "".join(r)
+  print(int(rev))
